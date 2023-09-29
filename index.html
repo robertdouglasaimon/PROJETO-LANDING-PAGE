@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom's Jazz School</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!--Link1 da fonte usada na page. Pego na apis do google, da onde vem e como chega lá? Só deus sabe kkkk fui no flow do professor. Depois eu vejo onde consigo essa fonte com clareza.-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--Link2 da fonte usada na page-->
+</head>
+<body>
+  <header>
+    <div class="container">
+        <img src="images/logo.svg" alt="Tom's Jazz School"> <!--Imagem referente ao cabeçalho da página, em caso de mudar.. Procurar        modificar nos mesmos parametros para evitar ERROS!-->
+        <nav> <!--Nav de link's referentes a barra superior da page. A barra usada para navegar pela página.-->
+         <a href="#">Início</a>
+         <a href="#">Cursos</a>
+         <a href="#">Eventos</a>
+         <a href="#">Contato</a>
+        </nav>
+        <a href="#" class="button mt-1 mb-1 mx-auto" >Se inscreva!</a> <!--Essa class button foi antecipada no inicio do código, já prevendo algum possivel botão a se   estilizar no CSS futuramente..-->
+    </div>
+    
+  </header>
+  <main>
+    <section class="hero-section">
+        <!--Primeira sessão do site, primeiro artigo da página, não necessariamente é um artigo (Não é um <article>!). Ta mais para uma apresentação.-->
+        <div class="container row-reverse">
+         <img src="images/hero-img.svg" alt="Banda de jazz tocando">
+            <div>
+              <h1 class="mt-2">Crie algo <span class="text-primary decoration">impactante</span> com música</h1>
+              <p class="mt-2 mb-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum facilis enim architecto culpa, corrupti  natus.</p>
+              <a href="#" class="button ">Comece agora</a>
+            </div> <!--DIV criada para agrupar os elementos da section, já que segundo o professor.. Eles vão se agrupar mesmo, então, que façamos isso de forma coordenada e de uma forma que dê para manusear via CSS  se necessário. Ainda to aprendendo a usar DIV's, então vamos ver como vai ser isso..-->
+        </div>
+
+    </section>
+    <section class="courses-section"><!--Aqui é a SEGUNDA sessão do site. Dentro da section e de um <article> obviamente kkk' -->
+
+        <div class="cards"> <!--Os artigos foram jogados dentro a da dive para poderem ser estilizados.-->
+        <article class="card"> <!--Primeiro artigo da sessão do site.-->
+            <img src="images/piano.png" alt="ícone de teclas de piano">
+            <strong>Piano popular</strong>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <a href="#">
+                <img src="images/arrow-right.svg" alt="Ir para página do curso.">
+            </a>
+        </article><!-- Segundo artigo da sessão do site.-->
+        <article class="card">
+            <img src="images/clef.png" alt="ícone da clava de sol">
+            <strong>Teoria Musical</strong>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <a href="#">
+                <img src="images/arrow-right.svg" alt="Ir para página do curso.">
+            </a>
+        </article>
+        <article class="card"><!--Terceiro artigo da sessão do site.-->
+            <img src="images/sax.png" alt="ícone de saxofone">
+            <strong>Sax alto</strong>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <a href="#">
+                <img src="images/arrow-right.svg" alt="Ir para página do curso.">
+            </a>
+        </article>
+        <article class="card"><!--Quarto artigo do site.-->
+            <img src="images/drums.png" alt="ícone de bateria">
+            <strong>Bateria</strong>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <a href="#">
+                <img src="images/arrow-right.svg" alt="Ir para página do curso.">
+            </a>
+        </article>
+        </div>
+        
+        <h2 class="text-center">E <span class="text-primary">vários</span> outros!</h2>
+        <a href="#" class="button mt-2 mx-auto">Conhecer cursos </a>
+    </section>
+  </main>
+
+   <footer ><!--Rodapé da página! Tudo dentro de FOOTER é relacionado ao RODAPÉ da página.-->
+     <div class="container">
+      <div class="about-column">
+        <img src="images/logo.svg" alt="Tom's Jazz School" class="mt-1 mb-2">
+        <p class="mb-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime sit culpa excepturi saepe officiis deserunt cumque.</p>
+     </div>
+      <nav class="mb-2"> <!--Nav de link's referentes a barra  inferior da page. A barra que fica no rodapé.-->
+        <a href="#">Início</a>
+        <a href="#">Cursos</a>
+        <a href="#">Eventos</a>
+        <a href="#">Contato</a>
+      </nav>
+      <form class="newsletter-form">
+        <label for="email" class="mb-1">Receba materiais gratuitos no seu email</label>
+        <input type="text" name="email" id="email" class="mb-1"   placeholder="Digite o seu email" >
+        <button class="button mb-2">Quero receber</button>
+      </form>  
+     </div>
+   </footer>
+</body>
+
+</html>
